@@ -1,0 +1,69 @@
+cat << 'EOF'
+Scenarios to evaluate against the current code:
+
+1. SPLIT ROWS — Long text wrapping across two PDF rows
+   e.g. "Net change in fair values of investments other than equity shares carried at fair"
+        "value through OCI"
+   Already visible in the user's output as two separate rows.
+
+2. DUPLICATE PARTICULARS NAMES — Same label used in two different sections
+   e.g. "Total" appearing under both Revenue and Expenses
+
+3. WHITESPACE / CASING INCONSISTENCY across PDFs
+   e.g. "Revenue from Operations" vs "Revenue from operations" vs "Revenue From Operations"
+
+4. MISSING YEAR in one PDF but present in another
+   e.g. 2022 data only exists in the 2023 PDF, not in its own PDF
+
+5. NOTE COLUMN with different names
+   e.g. "Notes" vs "Note" vs "Note No."
+
+6. FINANCIAL YEAR vs CALENDAR YEAR ambiguity
+   e.g. column says "March 2024" — does that mean FY2024 or FY2023?
+   Current code just grabs "2024" blindly.
+
+7. VALUES IN LAKHS vs CRORES across different years
+   e.g. older reports in lakhs, newer in crores — no unit detection
+
+8. CONSOLIDATED vs STANDALONE mixed in same ticker folder
+   e.g. two PDFs, one standalone one consolidated, both get merged
+
+9. EMPTY TABLES — camelot returns a table with zero data rows
+
+10. QUARTER vs ANNUAL — if a quarterly report PDF lands in the annual folder
+EOF
+Output
+
+Scenarios to evaluate against the current code:
+
+1. SPLIT ROWS — Long text wrapping across two PDF rows
+   e.g. "Net change in fair values of investments other than equity shares carried at fair"
+        "value through OCI"
+   Already visible in the user's output as two separate rows.
+
+2. DUPLICATE PARTICULARS NAMES — Same label used in two different sections
+   e.g. "Total" appearing under both Revenue and Expenses
+
+3. WHITESPACE / CASING INCONSISTENCY across PDFs
+   e.g. "Revenue from Operations" vs "Revenue from operations" vs "Revenue From Operations"
+
+4. MISSING YEAR in one PDF but present in another
+   e.g. 2022 data only exists in the 2023 PDF, not in its own PDF
+
+5. NOTE COLUMN with different names
+   e.g. "Notes" vs "Note" vs "Note No."
+
+6. FINANCIAL YEAR vs CALENDAR YEAR ambiguity
+   e.g. column says "March 2024" — does that mean FY2024 or FY2023?
+   Current code just grabs "2024" blindly.
+
+7. VALUES IN LAKHS vs CRORES across different years
+   e.g. older reports in lakhs, newer in crores — no unit detection
+
+8. CONSOLIDATED vs STANDALONE mixed in same ticker folder
+   e.g. two PDFs, one standalone one consolidated, both get merged
+
+9. EMPTY TABLES — camelot returns a table with zero data rows
+
+10. QUARTER vs ANNUAL — if a quarterly report PDF lands in the annual folder
+Done

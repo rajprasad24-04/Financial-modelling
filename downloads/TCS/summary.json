@@ -1,0 +1,21 @@
+{
+  "downloaded": 14,
+  "skipped": 54,
+  "failed": 0,
+  "files": [
+    "downloads/TCS/quarterly/TCS_Q1_2026.pdf",
+    "downloads/TCS/annual/TCS_Annual_2026.pdf",
+    "downloads/TCS/annual/TCS_Annual_2022.pdf",
+    "downloads/TCS/annual/TCS_Annual_2021.pdf",
+    "downloads/TCS/annual/TCS_Annual_2020.pdf",
+    "downloads/TCS/annual/TCS_Annual_2019.pdf",
+    "downloads/TCS/annual/TCS_Annual_2018.pdf",
+    "downloads/TCS/annual/TCS_Annual_2017.pdf",
+    "downloads/TCS/annual/TCS_Annual_2016.pdf",
+    "downloads/TCS/annual/TCS_Annual_2015.pdf",
+    "downloads/TCS/annual/TCS_Annual_2014.pdf",
+    "downloads/TCS/annual/TCS_Annual_2013.pdf",
+    "downloads/TCS/concall/TCS_Concall_Apr_2026_Transcript.pdf",
+    "downloads/TCS/concall/TCS_Concall_Mar_2026_PPT.pdf"
+  ]
+}
